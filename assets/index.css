@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.swiper-pagination-bullet{
+    width: 18px !important;
+    height: 18px !important;
+    border-radius: 5px !important;
+    background-color: #ffffff !important;
+    border: 2px solid #dddddd !important;
+}
+.main_title_item .active{
+    background-color: #95e8fe;
+}
+.main_box_item .box_item{
+    display: none;
+}
+.main_box_item .active{
+    display: block;
+}
+.huong-dan .main-box .image img{
+    transition: all 0.2s ease-in-out;
+}
+.huong-dan .main-box:hover .image img{
+    transform: scale(1.05);
+}
+@media screen and (max-width: 767px) {
+    .menu .fa-times {
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        top: 0.5%;
+        right: 2%;
+        width: 35px;
+        height: 35px;
+        border: 2px solid white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+    .menu .fa-times:hover{
+        opacity: .8;
+    }
+    .menu {
+        height: 100vh;
+        max-width: 250px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background-color:black;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        z-index: 100;
+    }
+    .menu ul {
+        margin-top: 15px;
+      }
+    .menu ul li {
+        padding: 10px 10px 10px 0;
+        width: 100%;
+        border-bottom: 1px solid rgb(26, 25, 25);
+      }
+    .menu ul li.bt {
+        border-top: 1px solid rgb(26, 25, 25);
+    }
+    .menu ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 13px;
+        transition: 0.3s;
+        padding-left: 10px;
+      }
+      
+    .menu ul li a:hover {
+        opacity: .8;
+      }
+}
